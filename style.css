@@ -5,6 +5,13 @@
   font-variation-settings:
     "wdth" 100;
 }
+
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 *{
     margin: 0;
 }
@@ -54,6 +61,52 @@
 }
 .banner h2{
     font-size: 72px;
-    font-weight: bolder;
+    font-weight: 900;
     margin-bottom: 16px;
+}
+.off{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    gap: 48px;
+
+}
+.off h1{
+    font-size: 88px;
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.party{
+    width: 1320px;
+    margin: 0 auto;
+    background-image: linear-gradient(90deg,rgba(7, 2, 17, 1) 0%, rgba(7, 2, 17, 0) 100%), url("images/Vectorrr.png");
+    color: white;
+    min-height: 600px;
+    border-radius: 16px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+.party div{
+    padding:120px 126px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.party h1{
+    font-size: 64px;
+    font-weight: 900;
+}
+.party p{
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 30px;
+}
+.party h2{
+    margin: 24px  0px 0px 32px;
 }

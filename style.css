@@ -66,13 +66,12 @@
 }
 .off{
     width: 1320px;
-    margin: 0 auto;
+    margin: 120px auto;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
     gap: 48px;
 
 }
@@ -84,13 +83,11 @@
 
 .party{
     width: 1320px;
-    margin: 0 auto;
+    margin: 120px auto;
     background-image: linear-gradient(90deg,rgba(7, 2, 17, 1) 0%, rgba(7, 2, 17, 0) 100%), url("images/Vectorrr.png");
     color: white;
     min-height: 600px;
     border-radius: 16px;
-    margin-top: 120px;
-    margin-bottom: 120px;
 }
 .party div{
     padding:120px 126px;
@@ -117,7 +114,7 @@
 
 .join-now{
     width: 1320px;
-    margin: 0 auto;
+    margin: 120px auto;
     background-image: linear-gradient(180deg,rgba(255, 0, 0, 0.1) 0%, rgba(255, 0, 0, 0) 100%) ;
     min-height: 600px;
     display: flex;
@@ -126,8 +123,6 @@
     align-items: center;
     text-align: center;
     border-radius: 16px;
-    margin-top: 120px;
-    margin-bottom: 120px;
     color: #FF0000;
 }
 
@@ -146,4 +141,11 @@
     border: none;
     padding: 16px 32px;
     margin-top: 32px;
+}
+
+.coming-soon{
+    width: 1320px;
+    margin: 120px auto;
+    display: flex;
+    align-items: center;
 }

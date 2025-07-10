@@ -110,3 +110,40 @@
 .party h2{
     margin: 24px  0px 0px 32px;
 }
+
+.black-color{
+    color: #070211;
+}
+
+.join-now{
+    width: 1320px;
+    margin: 0 auto;
+    background-image: linear-gradient(180deg,rgba(255, 0, 0, 0.1) 0%, rgba(255, 0, 0, 0) 100%) ;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 16px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    color: #FF0000;
+}
+
+.join-now h2{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 56px;
+}
+
+.join-now button{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    background-color: #FF0000;
+    border-radius: 8px;
+    border: none;
+    padding: 16px 32px;
+    margin-top: 32px;
+}

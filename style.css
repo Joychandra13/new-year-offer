@@ -149,3 +149,21 @@
     display: flex;
     align-items: center;
 }
+
+.holidays-sale{
+    width: 1320px;
+    margin: 120px auto;
+    background-image: url("images/Rectangle\ 2.png"), url(images/Group\ 44.png) ;
+    background-repeat: no-repeat;
+    background-position: bottom, right center;
+    min-height: 600px;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.holidays-sale h2{
+    font-size: 72px;
+    font-weight: 900;
+    color: #FF0000;
+    margin: 16px 0 28px 0;
+}

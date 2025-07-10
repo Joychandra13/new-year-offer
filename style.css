@@ -40,7 +40,7 @@
 
 
 .banner{
-    width: 1320px;
+    max-width: 1320px;
     margin: 0 auto;
     text-align: center;
     background-image: linear-gradient(180deg,rgba(7, 2, 17, 1) 0%, rgba(7, 2, 17, 0) 100%), url("images/Banner\ Image.png");
@@ -65,7 +65,7 @@
     margin-bottom: 16px;
 }
 .off{
-    width: 1320px;
+    max-width: 1320px;
     margin: 120px auto;
     text-align: center;
     display: flex;
@@ -82,7 +82,7 @@
 }
 
 .party{
-    width: 1320px;
+    max-width: 1320px;
     margin: 120px auto;
     background-image: linear-gradient(90deg,rgba(7, 2, 17, 1) 0%, rgba(7, 2, 17, 0) 100%), url("images/Vectorrr.png");
     color: white;
@@ -113,7 +113,7 @@
 }
 
 .join-now{
-    width: 1320px;
+    max-width: 1320px;
     margin: 120px auto;
     background-image: linear-gradient(180deg,rgba(255, 0, 0, 0.1) 0%, rgba(255, 0, 0, 0) 100%) ;
     min-height: 600px;
@@ -144,14 +144,14 @@
 }
 
 .coming-soon{
-    width: 1320px;
+    max-width: 1320px;
     margin: 120px auto;
     display: flex;
     align-items: center;
 }
 
 .holidays-sale{
-    width: 1320px;
+    max-width: 1320px;
     margin: 120px auto;
     background-image: url("images/Rectangle\ 2.png"), url(images/Group\ 44.png) ;
     background-repeat: no-repeat;
@@ -168,7 +168,7 @@
 }
 
 .portfolio{
-    width: 1320px;
+    max-width: 1320px;
     margin: 120px auto;
 }
 
@@ -184,7 +184,7 @@
 }
 
 .subscribe{
-    width: 1320px;
+    max-width: 1320px;
     margin: 120px auto;
     background-color:  rgba(255, 0, 0, .05) ;
     min-height: 600px;

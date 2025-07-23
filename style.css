@@ -18,21 +18,22 @@
 
 .header{
     margin: 50px 0;
+    padding: 0 150px;
 }
 
 /* common use */
 .common-title{
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: bold;
     color: #070211;
 }
 .common-sub-title{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #FF0000;
 }
 .common-des{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     color: rgba(7, 2, 17, 0.6);
     line-height: 32px;
@@ -52,18 +53,24 @@
     align-items: center;
     background-size: cover;
     border-radius: 16px;
+    background-position: center;
 }
 
 .banner h4{
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 500px;
     margin-bottom: 16px;
 }
 .banner h2{
-    font-size: 72px;
+    font-size: 4.5rem;
     font-weight: 900;
     margin-bottom: 16px;
 }
+
+main{
+    padding: 0 150px;
+}
+
 .off{
     max-width: 1320px;
     margin: 120px auto;
@@ -76,9 +83,12 @@
 
 }
 .off h1{
-    font-size: 88px;
+    font-size: 5.5rem;
     color: #FF0000;
     font-weight: bold;
+}
+.off img{
+    width: 100%;
 }
 
 .party{
@@ -88,6 +98,7 @@
     color: white;
     min-height: 600px;
     border-radius: 16px;
+    background-position: center;
 }
 .party div{
     padding:120px 126px;
@@ -96,11 +107,11 @@
     gap: 24px;
 }
 .party h1{
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: 900;
 }
 .party p{
-    font-size: 18px;
+    font-size:  1.125rem;
     color: rgba(255, 255, 255, 0.8);
     line-height: 30px;
 }
@@ -127,13 +138,13 @@
 }
 
 .join-now h2{
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 600;
     line-height: 56px;
 }
 
 .join-now button{
-    font-size: 20px;
+    font-size: 1.25rem;
     color: white;
     font-weight: bold;
     background-color: #FF0000;
@@ -147,7 +158,20 @@
     max-width: 1320px;
     margin: 120px auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+}
+.coming-soon-col-1{
+    width: 30%;
+}
+.coming-soon-col-2{
+    width: 50%;
+}
+.coming-soon-col-2 div{
+    border: 15px solid #ff0000; border-radius:50%; padding:48px;
+}
+.coming-soon-col-3{
+    width: 20%;
 }
 
 .holidays-sale{
@@ -161,7 +185,7 @@
     border-radius: 16px;
 }
 .holidays-sale h2{
-    font-size: 72px;
+    font-size: 4.5rem;
     font-weight: 900;
     color: #FF0000;
     margin: 16px 0 28px 0;
@@ -173,10 +197,13 @@
 }
 
 .portfolio-img{
-    display: flex;
-    flex-wrap: wrap;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     gap: 24px;
-    margin-top: 48px;
+}
+.portfolio-img img{
+    width: 100%;
 }
 
 .subscribe{
@@ -190,22 +217,23 @@
     align-items: center;
     text-align: center;
     border-radius: 16px;
+    padding: 10px;
 }
 
 
 input[type="email"]{
     border-radius: 50px 0 0 50px ;
-    font-size: 18px;
+    font-size: 1.25rem;
     color: rgba(7, 2, 17, .3);
     border: none;
-    padding: 24px 177px 24px 30px;
+    padding: 25px 150px 25px 30px;
 
 }
 input[type="submit"]{
     margin-left: -5px;
     background-color: #FF0000;
     border-radius: 0 50px 50px 0;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     color: white;
     border: none;
@@ -217,8 +245,91 @@ input[type="submit"]{
     padding: 120px 140px;
 }
 .footer h1{
-    font-size: 20px;
+    font-size: 1.25rem;
     color: white;
     font-weight: 600;
     line-height: 40px;
+}
+
+@media screen and (min-width: 576px) and (max-width: 1024px) {
+    .header{
+        margin: 50px 0;
+        padding: 0 50px;
+    }
+    main{
+        padding: 0 50px;
+    }
+    .coming-soon{
+        flex-direction: column;
+        text-align: center;
+    }
+    .coming-soon-col-1{
+        width: 100%;
+    }
+    .coming-soon-col-2{
+        width: 100%;
+        margin: 50px 0px;
+    }
+    .coming-soon-col-3{
+        width: 100%;
+    }
+    .portfolio-img{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    *{
+        font-size: 11px;
+    }
+    .header{
+        margin: 20px 0;
+        padding: 0 20px;
+    }
+    .banner{
+         min-height: 400px;
+    }
+    main{
+        padding: 0 20px;
+    }
+    .holidays-sale img{
+        width: 100%;
+        margin-top: 120px;
+    }
+    .party{
+        min-height: 400px;
+    }
+    .party div{
+        padding:50px 56px;
+    }
+    .join-now{
+        min-height: 400px;
+    }
+    .coming-soon{
+        flex-direction: column;
+        text-align: center;
+    }
+    .coming-soon-col-1{
+        width: 100%;
+    }
+    .coming-soon-col-2{
+        width: 100%;
+        margin: 50px 0px;
+    }
+    .coming-soon-col-3{
+        width: 100%;
+    }
+ 
+    .portfolio-img{
+        grid-template-columns: repeat(1,1fr);
+    }
+    input[type="email"]{
+        padding: 12px 0px 12px 30px;
+    }
+    input[type="submit"]{
+        padding: 12px 20px;
+    }
+    .footer{
+        padding: 50px 50px;
+    }
 }
